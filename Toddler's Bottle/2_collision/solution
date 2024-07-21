@@ -1,0 +1,4 @@
+We cannot put 0x00 in argv because it is reserved for string termination in C, then we need to for example
+make all 0x00 to 0x01 and substract 0x04 to the other bytes.
+
+./col $'\x01\x01\x01\x1d\x01\x01\xd9\x01\x01\x05\x01\x01\xe8\x01\x01\x01\x01\x01\x01\x01'
